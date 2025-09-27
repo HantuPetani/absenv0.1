@@ -33,7 +33,7 @@ Automated attendance system untuk mahasiswa Universitas Syiah Kuala yang seren l
    * Tambahkan secrets berikut:
      * `NPM`: Nomor Pokok Mahasiswa kalian (yang sering lupa pas ditanya dosen)
      * `PASSWORD`: Password SIMKULIAH
-3. **Setup Push Notification (Optional)**
+3. **Setup Push Notification (Optional serius, karena butuh effort sikit)**
    * Download **ntfy app** di HP (lebih recommended) atau akses ntfy.sh di web
    * Ganti topic di file `absen.py` dari `akbar-permana-absen-sukses` ke topic kalian sendiri
    * Topic bebas asal unik, contoh: `nama-kalian-absen` atau `npm-kalian-bot`
