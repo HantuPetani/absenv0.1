@@ -84,7 +84,7 @@ try:
             print("Proses absensi selesai. Harap cek manual apakah absensi benar-benar tercatat.")
             
             # Ganti topik ntfy.sh/akbar-permana-absen-sukses dengan topik ntfy kalian.
-            #os.system('curl -H "Title: Absen Berhasil" -d "Cihuyy, bot telah melakukan absensi." ntfy.sh/akbar-permana-absen-sukses')
+            os.system('curl -H "Title: Absen Berhasil" -d "Cihuyy, bot telah melakukan absensi." ntfy.sh/sayidil-anam-absen-sukses')
             
             
         else:
@@ -92,7 +92,7 @@ try:
             
             
             # Ganti topik ntfy.sh/akbar-permana-absen-info dengan topik ntfy kalian.
-            #os.system('curl -H "Title: Tidak Ada Jadwal" -d "Bot berjalan, tapi tidak ada jadwal absen yang tersedia." ntfy.sh/akbar-permana-absen-info')
+            os.system('curl -H "Title: Tidak Ada Jadwal" -d "Bot berjalan, tapi tidak ada jadwal absen yang tersedia." ntfy.sh/sayidil-anam-absen-info')
             
 
 except Exception as e:
