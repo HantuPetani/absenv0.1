@@ -12,6 +12,7 @@ load_dotenv()
 USERNAME = os.getenv("NPM")
 PASSWORD = os.getenv("PASSWORD")
 
+
 options = Options()
 options.add_argument("--headless") 
 options.add_argument("--no-sandbox")
@@ -83,7 +84,7 @@ try:
             print("Proses absensi selesai. Harap cek manual apakah absensi benar-benar tercatat.")
             
             # Ganti topik ntfy.sh/akbar-permana-absen-sukses dengan topik ntfy kalian.
-            os.system('curl -H "Title: Absen Berhasil" -d "Cihuyy, bot telah melakukan absensi." ntfy.sh/akbar-permana-absen-sukses')
+            #os.system('curl -H "Title: Absen Berhasil" -d "Cihuyy, bot telah melakukan absensi." ntfy.sh/akbar-permana-absen-sukses')
             
             
         else:
@@ -91,7 +92,7 @@ try:
             
             
             # Ganti topik ntfy.sh/akbar-permana-absen-info dengan topik ntfy kalian.
-            os.system('curl -H "Title: Tidak Ada Jadwal" -d "Bot berjalan, tapi tidak ada jadwal absen yang tersedia." ntfy.sh/akbar-permana-absen-info')
+            #os.system('curl -H "Title: Tidak Ada Jadwal" -d "Bot berjalan, tapi tidak ada jadwal absen yang tersedia." ntfy.sh/akbar-permana-absen-info')
             
 
 except Exception as e:
@@ -101,7 +102,7 @@ except Exception as e:
     print(" Potongan halaman:\n", driver.page_source[:1000])
     
     # Ganti topik ntfy.sh/akbar-permana-absen-error dengan topik ntfy kalian.
-    os.system('curl -H "Title:  Absen ERROR" -d "Terjadi error saat menjalankan bot. Cek log di GitHub Actions." ntfy.sh/akbar-permana-absen-error')
+    #os.system('curl -H "Title:  Absen ERROR" -d "Terjadi error saat menjalankan bot. Cek log di GitHub Actions." ntfy.sh/akbar-permana-absen-error')
 
 finally:
     driver.quit()
